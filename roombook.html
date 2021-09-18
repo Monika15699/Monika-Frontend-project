@@ -1,0 +1,172 @@
+<html>
+<head>
+<title>Book room
+</title>
+<style>
+body{
+   margin:0;
+   padding:0;
+   font-family:sans-serif;
+   background:url(branchess.jpeg);
+   background-size:cover;
+}
+.box{
+   width:650px;
+   height:580px;
+   padding:30px;
+   position:absolute;
+   top:70%;
+   left:50%;
+   transform:translate(-50%,-50%);
+  text-align:center;
+}
+.box h1
+   {
+   color:white;
+   text-transform;uppercase;
+   font-weight:700;
+}
+.box input[type="text"],.box input[type="number"],.box input[type="email"],.box input[type="tel"],.box select,.box input[type="file"]
+{
+   border:0;
+   background:none;
+   display:block;
+   margin:20px auto;
+   
+   text-align:center;
+   border:3px solid #0367fd;
+   paddind:14px 35px;
+   width:300px;
+   height:38px;
+   outline:none;
+   color:black;
+   border-radius:24px;
+}
+.box input[type="text"]:focus,.box input[type="number"]:focus,.box input[type="email"]:focus,.box input[type="tel"]:focus,box select:focus,.box input[type="file"]:focus
+{
+width:270px;
+border-color:#ffc400ec;
+}
+.box input[type="submit"]{
+   border:0;
+   background:none;
+   display:block;
+   margin:20px auto;
+   height:30px;
+   width:150px;
+   text-align:center;
+   border:3px solid #ffc400ec;
+   paddind:14px 35px;
+   outline:none;
+   color:white;
+   border-radius:24px;
+   transition:0.25px;
+   cursor:pointer;
+}
+.box input[type="submit"]:hover{
+  background: #ffc400ec;
+  color:#63480d;
+  }
+::placeholder{
+   color:#63480d;
+   opacity:1;
+}
+
+img{
+height:100px;
+width:100px;
+}
+.royal{
+   color:#19077d;
+   font-family:Georgia, serif;
+   font-size:55px;
+   text-align:center;
+   top:10px;
+   left:18px;
+}
+
+.b1{
+    float:right;
+	text-align:right;
+	border:2px;
+	color:white;
+	padding: 16px 32px;
+	text-decoration: none;
+	display:inlineblock;
+	font-size:16px;
+	margin:4px 2px;
+	transition-duration:0.4s;
+	cursor;pointer;
+	background-color:#7a093e;
+}
+.b1:hover{
+   background-color:white;
+   color:#7a093e;
+   border:2px solid #7a093e;
+}
+a{
+ text-decoration:none;
+ color:white;
+}
+
+.b2{
+    float:right;
+	text-align:right;
+	border:2px;
+	color:white;
+	padding: 16px 32px;
+	text-decoration: none;
+	display:inlineblock;
+	font-size:16px;
+	margin:4px 2px;
+	transition-duration:0.4s;
+	cursor;pointer;
+	background-color:#114b69;
+}
+a:hover{
+   background-color:white;
+   color:#114b69;
+   border: 2px solid #114b69;
+}
+.b2:hover{
+   background-color:white;
+   color:#114b69;
+   border: 2px solid #114b69;
+   }
+
+</style>
+</head>
+<body>
+<div><header>
+<img src="newlogo.jpeg">
+<button class="b1"><a href="file:///D:/hotelmanagement/mainpage.html">Home</a></button>
+<button class="b2"><a href="file:///D:/hotelmanagement/mainpage.html">back</a></button>
+</header>
+<h1 class="royal">Royal hotel</h1></div>
+<form name="myform" class="box" action="THANKINGSTAY.HTML" method="post" onsubmit="return validateform()">
+<h1 style="color:#6b0b61">
+Just single step to book your stay!!
+</h1>
+<input type="text" name="name" placeholder="Enter your name"id="name">
+<input type="email" name="email" placeholder="Enter Email id"id="email">
+<input type="tel" name="telephone" placeholder="ph-xx xxxx xxxx">
+<input style="color:#63480d" type="number"  name="count"placeholder="Room Count" max="4" min="1">
+<p style="color:#63480d">Room type:</p>
+<select placeholder="Room type" style="color:#63480d">
+<option>select</option>
+<option>Normal</option>
+<option>Classsic</option>
+<option>Premium</option>
+</select>
+<p style="color:#63480d">Select Proof:</p>
+<select style="color:#63480d">
+<option>select</option>
+<option>Aadhar card</option>
+<option>Voter ID</option>
+<option>Driving license</option>
+</select style="color:#63480d">
+<p style="color:#63480d">Select file for proof:</p>
+<input type="file" name="attach file">
+<input style="color:#63480d" type="submit"  value="Book stay">
+</body>
+</html>
